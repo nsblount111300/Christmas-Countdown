@@ -1,0 +1,22 @@
+h1 {
+  font-size: 75px;
+  text-shadow: 4px 7px 7px rgba(0, 0, 0, 0.91);
+}
+h2 {
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 4px 5px 7px rgba(0, 0, 0, 0.91);
+}
+body {
+  margin-top: 30%;
+  background-color: rgb(255, 86, 86);
+  /* background-image: "snowflakes.jpg";
+  background-image: url(https://source.unsplash.com/random); */
+  background-repeat: no-repeat;
+  background-size: fill;
+  color: rgb(112, 223, 97);
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
