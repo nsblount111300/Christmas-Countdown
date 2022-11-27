@@ -1,6 +1,3 @@
-// document.body.background = "snowflakes.jpg";
-// document.body.style.backgroundSize = ;
-
 const daysLeft = document.getElementById("days-left");
 const hoursLeft = document.getElementById("hours-left");
 const minutesLeft = document.getElementById("minutes-left");
@@ -19,12 +16,6 @@ function christmasCountdown() {
   const today = new Date();
   const timeSpan = christmas - today;
 
-  //   if (timeSpan <= -day) {
-  //     daysLeft.innerHTML = "Hope you had a merry christmas!";
-  //     clearInterval(timerId);
-  //     return;
-  //   }
-
   const days = Math.floor(timeSpan / day);
   const hours = Math.floor((timeSpan % day) / hour);
   const minutes = Math.floor((timeSpan % hour) / minute);
@@ -34,6 +25,7 @@ function christmasCountdown() {
   hoursLeft.innerHTML = hours + " Hours";
   minutesLeft.innerHTML = minutes + " Minutes";
   secondsLeft.innerHTML = seconds + " Seconds";
+
   if (timeSpan <= 0) {
     title.innerHTML = "Merry Christmas!";
     daysLeft.innerHTML = "Have a safe and happy holidays!";
