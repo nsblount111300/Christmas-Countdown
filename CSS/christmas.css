@@ -1,22 +1,23 @@
 h1 {
-  /* margin-top: 100px; */
   font-size: 65px;
   text-shadow: 4px 7px 7px rgba(0, 0, 0, 0.91);
 }
+
 h2 {
   font-size: 40px;
   font-style: italic;
   text-align: center;
   text-shadow: 4px 5px 7px rgba(0, 0, 0, 0.91);
 }
+
 body {
-  /* margin-top: 25px; */
   background-color: rgb(255, 86, 86);
   color: rgb(112, 223, 97);
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 .header {
   padding: 30px;
   text-align: center;
@@ -25,10 +26,12 @@ body {
   font-size: 50px;
   border: 3px solid black;
 }
+
 a:visited {
   color: black;
   text-decoration: none;
 }
+
 .header a {
   text-decoration: none;
 }
@@ -41,12 +44,9 @@ a:visited {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 10px;
-  /* margin: auto; */
   height: 75px;
-  /* background: rgb(61, 61, 61); */
-  /* background: rgb(219, 219, 219); */
-  /* border: 2px solid black; */
 }
+
 .dropdown-menu {
   display: grid;
   place-items: center;
@@ -57,20 +57,19 @@ a:visited {
   box-shadow: 0px -20px 60px -20px rgba(0, 0, 0, 0.7);
   opacity: 0;
   width: 300px;
-  /* height: 30vh; */
   pointer-events: none;
   transform: translateY(-70px);
   transition: opacity 150ms ease-in-out, transform 450ms ease-in-out;
   border: 2px solid black;
-
   z-index: 1;
-  /* border: 1px solid red; */
 }
+
 .dropdown.active > .link + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
+
 .link {
   font-size: 40px;
   background-color: rgb(63, 63, 63);
@@ -83,7 +82,6 @@ a:visited {
   height: 9.5vh;
   place-items: center;
   border: 2px solid black;
-  /* border: 1px solid red; */
 }
 
 .dropdown-menu a {
