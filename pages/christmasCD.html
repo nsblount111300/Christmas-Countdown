@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ultimate Countdowns</title>
-    <script src="./JS/menu.js" defer></script>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Ultimate Countdown</title>
+    <link rel="stylesheet" href="../CSS/christmasCD.css" />
+    <audio
+      src="../Audio/ChristmasCountdownMusic.mp3"
+      autoplay="true"
+      type="audio"
+      loop="true"
+    ></audio>
   </head>
   <body>
     <div class="header">
-      <a href="index.html" class="home">Ultimate Countdowns</a>
+      <a href="/index.html" class="home">Ultimate Countdowns</a>
     </div>
     <div class="dropdown" data-dropdown>
       <button class="link" data-dropdown-button>Presets</button>
       <div class="dropdown-menu">
-        <a href="./pages/christmasCD.html">Christmas</a>
+        <a href="../index.html">Home</a>
         <a href="">Easter (WIP)</a>
         <a href="">Halloween (WIP)</a>
         <a href="">Valentine's Day (WIP)</a>
@@ -23,11 +28,12 @@
         <a href="">New Year (WIP)</a>
       </div>
     </div>
-    <div class="input-countdown">
-      <h1>Want a custom countdown?</h1>
-      <input type="text" name="title" id="input" placeholder="Title" /><br />
-      <input type="date" name="date" id="input-date" /><br />
-      <button type="submit" id="input-button">Calculate Countdown (WIP)</button>
-    </div>
+    <h1 id="title">Days until Christmas:</h1>
+    <h2 id="days-left">Asking Santa...</h2>
+    <h2 id="hours-left"></h2>
+    <h2 id="minutes-left"></h2>
+    <h2 id="seconds-left"></h2>
+    <script src="../JS/christmasCD.js"></script>
+    <script src="../JS/menu.js"></script>
   </body>
 </html>
