@@ -27,10 +27,11 @@
       <h1>Want a custom countdown?</h1>
       <input type="text" name="title" id="input" placeholder="Title" /><br />
       <input
-        type="date"
+        type="text"
         name="date"
         id="input-date"
-        placeholder="MM/DD/YYYY"
+        onfocus="(this.type='date')"
+        onblur="(this.type='MM/DD/YYYY')"
       /><br />
       <button type="submit" id="input-button">Calculate Countdown (WIP)</button>
     </div>
