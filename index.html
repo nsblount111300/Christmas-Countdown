@@ -34,8 +34,18 @@
         placeholder="MM/DD/YYYY"
         onkeydown="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
       /><br />
-      <button type="submit" id="input-button">Calculate Countdown (WIP)</button>
+      <button type="submit" id="input-button" onclick="onSubmit()">
+        Calculate Countdown (WIP)
+      </button>
+    </div>
+    <div class="custom-countdown">
+      <h1 id="title"></h1>
+      <h2 id="days-left"></h2>
+      <h2 id="hours-left"></h2>
+      <h2 id="minutes-left"></h2>
+      <h2 id="seconds-left"></h2>
     </div>
     <script src="./JS/menu.js" defer></script>
+    <script src="script.js"></script>
   </body>
 </html>
