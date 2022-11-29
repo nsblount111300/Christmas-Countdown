@@ -29,8 +29,11 @@
       <input
         type="tel"
         name="date"
+        size="10"
+        maxlength="10"
         id="input-date"
         placeholder="MM/DD/YYYY"
+        onkeydown="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
       /><br />
       <button type="submit" id="input-button">Calculate Countdown (WIP)</button>
     </div>
