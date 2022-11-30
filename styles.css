@@ -10,6 +10,9 @@ body {
   color: white;
 }
 
+.custom-countdown {
+  text-align: center;
+}
 .header {
   padding: 30px;
   text-align: center;

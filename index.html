@@ -22,29 +22,31 @@
         <a href="./pages/newyearCD.html">New Year's Day</a>
       </div>
     </div>
-    <div class="input-countdown">
-      <h1>Want a custom countdown?</h1>
-      <input type="text" name="title" id="input" placeholder="Title" /><br />
-      <input
-        type="tel"
-        name="date"
-        size="10"
-        maxlength="10"
-        id="input-date"
-        placeholder="MM/DD/YYYY"
-        onkeydown="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
-      /><br />
-      <button type="submit" id="input-button" onclick="onSubmit()">
-        Calculate Countdown (WIP)
-      </button>
-    </div>
-    <div class="custom-countdown">
-      <h1 id="title"></h1>
-      <h2 id="days-left"></h2>
-      <h2 id="hours-left"></h2>
-      <h2 id="minutes-left"></h2>
-      <h2 id="seconds-left"></h2>
-    </div>
+    <form action="">
+      <div class="input-countdown">
+        <h1>Want a custom countdown?</h1>
+        <input type="text" name="title" id="input" placeholder="Title" /><br />
+        <input
+          type="tel"
+          name="date"
+          size="10"
+          maxlength="10"
+          id="input-date"
+          placeholder="MM/DD/YYYY"
+          onkeydown="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
+        /><br />
+        <button type="button" id="input-button">
+          Calculate Countdown (WIP)
+        </button>
+      </div>
+      <div class="custom-countdown">
+        <h1 id="title"></h1>
+        <h2 id="days-left"></h2>
+        <h2 id="hours-left"></h2>
+        <h2 id="minutes-left"></h2>
+        <h2 id="seconds-left"></h2>
+      </div>
+    </form>
     <script src="./JS/menu.js" defer></script>
     <script src="script.js"></script>
   </body>
