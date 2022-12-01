@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Countdowns</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="../index.html" class="home">Ultimate Countdowns</a>
+    </div>
+    <div class="dropdown" data-dropdown>
+      <button class="link" data-dropdown-button>Presets</button>
+      <div class="dropdown-menu">
+        <a href="./pages/christmasCD.html">Christmas</a>
+        <a href="./pages/easterCD.html">Easter</a>
+        <a href="./pages/halloweenCD.html">Halloween</a>
+        <a href="./pages/valentinesCD.html">Valentine's Day</a>
+        <a href="./pages/stpatCD.html">St. Patrick's Day</a>
+        <a href="./pages/newyearCD.html">New Year's Day</a>
+      </div>
+    </div>
+    <div class="custom-countdown" id="custom-countdown">
+      <h1 id="title"></h1>
+      <h2 id="days-left"></h2>
+      <h2 id="hours-left"></h2>
+      <h2 id="minutes-left"></h2>
+      <h2 id="seconds-left"></h2>
+    </div>
+    <button id="reset-button" class="reset-button">
+      <a href="./index.html"></a>Calculate New Countdown
+    </button>
+    <script src="./JS/menu.js" defer></script>
+    <script src="../JS/customCD.js"></script>
+  </body>
+</html>

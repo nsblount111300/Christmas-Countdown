@@ -22,32 +22,41 @@
         <a href="./pages/newyearCD.html">New Year's Day</a>
       </div>
     </div>
-    <form action="">
-      <div class="input-countdown" id="input-countdown">
-        <h1>Want a custom countdown?</h1>
-        <input type="text" name="title" id="input" placeholder="Title" /><br />
-        <input
-          type="tel"
-          name="date"
-          size="10"
-          maxlength="10"
-          id="input-date"
-          placeholder="MM/DD/YYYY"
-          onkeydown="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
-        /><br />
-        <button type="button" id="input-button">Calculate Countdown</button>
-      </div>
-      <div class="custom-countdown" id="custom-countdown">
+    <div class="input-countdown" id="input-countdown">
+      <h1>Want a custom countdown?</h1>
+      <input
+        type="text"
+        name="title"
+        id="input"
+        class="input"
+        placeholder="Title"
+      /><br />
+      <input
+        type="tel"
+        name="date"
+        size="10"
+        maxlength="10"
+        id="input-date"
+        class="date"
+        placeholder="MM/DD/YYYY"
+        onkeydown="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
+      /><br />
+      <a href="./pages/customCD.html">
+        <button type="button" id="input-button" class="button">
+          Calculate Custom Countdown
+        </button>
+      </a>
+    </div>
+    <!-- <div class="custom-countdown" id="custom-countdown">
         <h1 id="title"></h1>
         <h2 id="days-left"></h2>
         <h2 id="hours-left"></h2>
         <h2 id="minutes-left"></h2>
         <h2 id="seconds-left"></h2>
-        <button id="reset-button" class="reset-button">
-          <a href="./index.html"></a>Calulate New Countdown
-        </button>
-      </div>
-    </form>
+      </div> -->
+    <!-- <button id="reset-button" class="reset-button">
+      <a href="./index.html"></a>Calculate New Countdown
+    </button> -->
     <script src="./JS/menu.js" defer></script>
     <script src="script.js"></script>
   </body>
