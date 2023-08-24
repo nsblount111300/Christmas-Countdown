@@ -4,7 +4,7 @@ const minutesLeft = document.getElementById("minutes-left");
 const secondsLeft = document.getElementById("seconds-left");
 const title = document.getElementById("title");
 
-const newyears = new Date("01/01/2023");
+const newyears = new Date("01/01/2024");
 
 const second = 1000;
 const minute = second * 60;
